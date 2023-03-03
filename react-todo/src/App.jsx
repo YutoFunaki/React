@@ -1,10 +1,16 @@
 import React from "react";
 
 const App = () => {
+  const OnClickButton = () => alert();
+  const ContentStyle = {
+    color: "blue",
+    fontSize: "18px"
+  }
   return (
     <>
-     <h1>hello!Im YutoFunaki!</h1>
-     <p>how are you?</p>
+     <h1 style={{ color: 'red' }}>hello!Im YutoFunaki!</h1>
+     <p style={ContentStyle}>how are you?</p>
+     <button onClick={OnClickButton}>ボタン</button>
     </>
     );
 };
